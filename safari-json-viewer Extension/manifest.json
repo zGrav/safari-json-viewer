@@ -1,0 +1,16 @@
+{
+    "manifest_version": 3,
+    "name": "safari-json-viewer",
+    "description": "Parse JSON into a neat tree view in Safari.",
+    "version": "1.0",
+    "content_scripts": [{
+        "js": ["content.js"],
+        "matches": ["*://*/*"]
+    }],
+    "permissions": [
+        "clipboardWrite"
+    ],
+    "host_permissions": [
+        "*://*/*"
+    ]
+}
